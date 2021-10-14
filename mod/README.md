@@ -12,7 +12,7 @@ Also altered are the built-in graphic entity definitions for habitable ringworld
 
 ## Compatibility
 
-Built for Stellaris version 3.1.* "Lem."  Not compatible with achievements (because of the necessary event and the planetary decision override).
+Built for Stellaris version 3.1.\* "Lem."  Not compatible with achievements (because of the necessary event and the planetary decision override).
 
 Should be compatible with almost anything.  If other mods add new origins which also start on a ringworld, this mod will **not** affect them.  Mods that add new graphics entity definitions for ringworlds will **not** be affected by this mod - they may or may not have cloud cover based on how the author created their graphics entity definitions.
 
