@@ -1,0 +1,60 @@
+# Overview
+
+Have you ever noticed that the ringworld from Origin: Shattered Ring is always the same colors (green and black) regardless of your ship appearance?  This mod changes that - now your starting ringworld will be the same as your empire's ship appearance (graphical culture).  However, ringworlds will always have a specific color based on the shipset rather than your empire's flag colors.
+
+Have you also noticed that repaired or constructed habitable ringworld segments don't have cloud cover, unlike the Origin: Shattered Ring starting segment?  It turns out that PDX made changes to how the cloud animation mesh is attached to habitable ringworld segments somewhere between version 1.6.3 "Adams" and version 1.9 "Boulle" and only updated the default habitable ringworld segment.  This mod fixes the entity definitions for every built-in shipset so that all habitable ringworld segments can enjoy cloud cover, regardless of which empire builds or restores them.
+
+# Changes
+
+This mod adds one extra event which is triggered after each empire's capital planet is initialized.  This event executes for every empire with Origin: Shattered Ring.  The event switches the appearance of the starting ringworld to match the shipset selected by the empire, but has no gameplay impact.  When the shattered ring segment is fully repaired (as of 3.1) the new segment resets its graphical entity upon completion which results in the ringworld returning to the default graphics.  To avoid this, the decision to restore a shattered ring segment now keeps its graphics entity when changing its planet class to a real ringworld segment.
+
+Also altered are the built-in graphic entity definitions for habitable ringworld segments.  Every shipset (graphical culture) has its habitable ringworld segment definition updated to attach the cloud cover animation using a separate entity.  Thus all habitable ringworld segments properly display the cloud cover that was previously missing.
+
+## Compatibility
+
+Built for Stellaris version 3.1.* "Lem."  Not compatible with achievements (because of the necessary event and the planetary decision override).
+
+Should be compatible with almost anything.  If other mods add new origins which also start on a ringworld, this mod will **not** affect them.  Mods that add new graphics entity definitions for ringworlds will **not** be affected by this mod - they may or may not have cloud cover based on how the author created their graphics entity definitions.
+
+### When to Install
+
+This mod can be safely added or removed from your save game after the game has started.  The Origin: Shattered Ring code in this mod executes entirely during game setup - if the game was started with the mod, its effects have already been applied otherwise nothing happens.  The fix applied to the shattered ring restoration decision only fires once the decision completes - if you remove this mod, any existing restored segments will retain their existing appearance, but newly repaired segments will be set to the default appearance.  The other graphical fixes only apply while the mod is enabled, otherwise the game will use its built-in definitions (which lack clouds).
+
+## Known Issues
+
+### Stellaris Bugs
+
+After reloading a saved game, habitable ringworld segments that have a graphical culture no longer display the "planetary" texture - instead, only the bodies of water show and the ringworld's base texture is visible through the "holes."  Ringworld segments are set to match your empire's graphical culture either with this mod, or by the game itself when you restore or build a ringworld.  I have reported this bug on the official [forums](https://forum.paradoxplaza.com/forum/threads/stellaris-v3-1-2-6df7-ring-worlds-do-not-have-planetary-terrain-after-the-game-is-loaded.1494567/).
+
+Ringworld segments with a graphical culture do not have cloud cover in the base game.  This mod fixes that issue, but I still reported it as a bug on the official [forums](https://forum.paradoxplaza.com/forum/threads/stellaris-v3-1-2-6df7-ring-worlds-do-not-have-clouds-whether-newly-constructed-or-restored-from-a-damaged-segment.1494566/).
+
+### Error Logs
+
+Overriding planetary decisions and graphical entity definitions produces entries in the error.log file, so expect to see twelve lines similar to these:
+
+```
+[02:15:31][pdx_entity.cpp:2583]: Duplicate of ringworld_habitable_entity_01_entity added to entity system
+[02:15:31][pdx_entity.cpp:2583]: Duplicate of arthropoid_01_ringworld_habitable_entity_01_entity added to entity system
+[02:15:31][pdx_entity.cpp:2583]: Duplicate of avian_01_ringworld_habitable_entity_01_entity added to entity system
+[02:15:31][pdx_entity.cpp:2583]: Duplicate of fungoid_01_ringworld_habitable_entity_01_entity added to entity system
+[02:15:31][pdx_entity.cpp:2583]: Duplicate of mammalian_01_ringworld_habitable_entity_01_entity added to entity system
+[02:15:31][pdx_entity.cpp:2583]: Duplicate of molluscoid_01_ringworld_habitable_entity_01_entity added to entity system
+[02:15:31][pdx_entity.cpp:2583]: Duplicate of plantoid_01_ringworld_habitable_entity_01_entity added to entity system
+[02:15:31][pdx_entity.cpp:2583]: Duplicate of reptilian_01_ringworld_habitable_entity_01_entity added to entity system
+[02:15:31][pdx_entity.cpp:2583]: Duplicate of lithoid_01_ringworld_habitable_entity_01_entity added to entity system
+[02:15:31][pdx_entity.cpp:2583]: Duplicate of necroid_01_ringworld_habitable_entity_01_entity added to entity system
+[02:15:31][pdx_entity.cpp:2583]: Duplicate of nemesis_01_ringworld_habitable_entity_01_entity added to entity system
+[02:15:34][game_singleobjectdatabase.h:147]: Object with key: decision_shattered_ring_project already exists
+```
+
+## Changelog
+
+* 1.0.0 Initial version
+
+## Source Code
+
+Hosted on [GitHub](https://github.com/corsairmarks/ringworld_graphical_enhancements)
+
+### Development Notes
+
+It is best to clone this repository into `<Stellaris User's Directory>/Paradox Interactive/Stellaris/mod`, and then make a connection to the `mod` folder via a `*.mod` file's `path` property.  That will ensure the game can see the files, and also that CWTools will parse them.  Also note that the README.md file exists in the `mod` directory but is symbolically linked in the root directory.

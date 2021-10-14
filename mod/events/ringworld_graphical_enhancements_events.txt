@@ -1,0 +1,27 @@
+namespace = ringworld_graphical_enhancements
+
+# triggered by empire_init_capital_planet
+planet_event = {
+	id = ringworld_graphical_enhancements.1
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		owner = { has_origin = origin_shattered_ring }
+	}
+	immediate = {
+		owner = { save_event_target_as = initializing_country }
+		solar_system = {
+			reset_ringworld_section_graphical_culture = { SECTION_TYPE = habitable }
+			reset_ringworld_section_graphical_culture = { SECTION_TYPE = habitable_damaged }
+			reset_ringworld_section_graphical_culture = { SECTION_TYPE = tech }
+			reset_ringworld_section_graphical_culture = { SECTION_TYPE = tech_damaged }
+			reset_ringworld_section_graphical_culture = { SECTION_TYPE = seam }
+			reset_ringworld_section_graphical_culture = { SECTION_TYPE = seam_damaged }
+			reset_shattered_ringworld_section_graphical_culture = yes
+			every_system_megastructure = {
+				limit = { is_megastructure_type = ring_world_ruined }
+				set_graphical_culture = event_target:initializing_country
+			}
+		}
+	}
+}
