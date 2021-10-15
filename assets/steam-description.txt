@@ -49,7 +49,7 @@ Overriding planetary decisions and graphical entity definitions produces entries
 
 [h2]Changelog[/h2]
 
-See [url=]Change Notes[/url]
+See [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2628518102]Change Notes[/url]
 
 [h2]Source Code[/h2]
 
