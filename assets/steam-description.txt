@@ -20,6 +20,16 @@ Should be compatible with almost anything else.  If other mods add new origins w
 
 This mod can be safely added or removed from your save game after the game has started.  The Origin: Shattered Ring code in this mod executes entirely during game setup - if the game was started with the mod, its effects have already been applied otherwise nothing happens.  The fix applied to the shattered ring restoration decision only fires once the decision completes - if you remove this mod, any existing restored segments will retain their existing appearance, but newly repaired segments will be set to the default appearance.  The other graphical fixes only apply while the mod is enabled, otherwise the game will use its built-in definitions (which lack clouds).
 
+[h3]Recommended Companion Mods[/h3]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2622411084]Aesthetic Terraform Stations[/url] will give you back the very old-school terraform stations as visual markers for terraforming planets.
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2077186491]Machine Shipset[/url] is a phenomenal, fully-sectioned shipset and includes megastructures.  Combined with this mod you can have Origin: Shattered Ring with the Machine Shipset ringworld appearance.
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2628980994]Machine Shipset Add-on: Shattered Ring Appearance[/url] ensures that the permanently-destroyed sections for Origin: Shattered Ring using the Machine Shipset properly display as that shipset.  This mod adds missing graphical definitions to the Machine Shipset.
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2628972292]Machine Shipset Add-on: Aesthetic Terraform Station Compatibility[/url] this compatibility patch ensures the correct Machine Shipset graphics are used for the above terraform stations.
+
 [h2]Known Issues[/h2]
 
 [h3]Stellaris Bugs[/h3]
