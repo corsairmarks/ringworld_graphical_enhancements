@@ -15,6 +15,15 @@ entity = {
 		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
 	}
 
+	meshsettings = {
+		name = "polySurface9Shape"
+		index = 0
+		texture_diffuse = "gaia_01_diffuse.dds"
+		texture_normal = "tropical_03_normal.dds"
+		texture_specular = "tropical_03_ringworld_spec.dds"
+		shader = "PdxMeshTerra"
+	}
+
 	game_data = {
 		size = @ringworld_segment_size
 	}
@@ -43,6 +52,15 @@ entity = {
 		texture_diffuse = "ringworld_habitable_arthropoid_01_diffuse.dds"
 		texture_normal = "ringworld_habitable_normal.dds"
 		texture_specular = "ringworld_habitable_arthropoid_01_specular.dds"
+		shader = "PdxMeshTerra"
+	}
+
+	meshsettings = {
+		name = "polySurface9Shape"
+		index = 0
+		texture_diffuse = "gaia_01_diffuse.dds"
+		texture_normal = "tropical_03_normal.dds"
+		texture_specular = "tropical_03_ringworld_spec.dds"
 		shader = "PdxMeshTerra"
 	}
 
@@ -77,6 +95,15 @@ entity = {
 		shader = "PdxMeshTerra"
 	}
 
+	meshsettings = {
+		name = "polySurface9Shape"
+		index = 0
+		texture_diffuse = "gaia_01_diffuse.dds"
+		texture_normal = "tropical_03_normal.dds"
+		texture_specular = "tropical_03_ringworld_spec.dds"
+		shader = "PdxMeshTerra"
+	}
+
 	game_data = {
 		size = @ringworld_segment_size
 	}
@@ -105,6 +132,15 @@ entity = {
 		texture_diffuse = "ringworld_habitable_fungoid_01_diffuse.dds"
 		texture_normal = "ringworld_habitable_normal.dds"
 		texture_specular = "ringworld_habitable_fungoid_01_specular.dds"
+		shader = "PdxMeshTerra"
+	}
+
+	meshsettings = {
+		name = "polySurface9Shape"
+		index = 0
+		texture_diffuse = "gaia_01_diffuse.dds"
+		texture_normal = "tropical_03_normal.dds"
+		texture_specular = "tropical_03_ringworld_spec.dds"
 		shader = "PdxMeshTerra"
 	}
 
@@ -139,6 +175,15 @@ entity = {
 		shader = "PdxMeshTerra"
 	}
 
+	meshsettings = {
+		name = "polySurface9Shape"
+		index = 0
+		texture_diffuse = "gaia_01_diffuse.dds"
+		texture_normal = "tropical_03_normal.dds"
+		texture_specular = "tropical_03_ringworld_spec.dds"
+		shader = "PdxMeshTerra"
+	}
+
 	game_data = {
 		size = @ringworld_segment_size
 	}
@@ -167,6 +212,15 @@ entity = {
 		texture_diffuse = "ringworld_habitable_molluscoid_01_diffuse.dds"
 		texture_normal = "ringworld_habitable_normal.dds"
 		texture_specular = "ringworld_habitable_molluscoid_01_specular.dds"
+		shader = "PdxMeshTerra"
+	}
+
+	meshsettings = {
+		name = "polySurface9Shape"
+		index = 0
+		texture_diffuse = "gaia_01_diffuse.dds"
+		texture_normal = "tropical_03_normal.dds"
+		texture_specular = "tropical_03_ringworld_spec.dds"
 		shader = "PdxMeshTerra"
 	}
 
@@ -201,6 +255,15 @@ entity = {
 		shader = "PdxMeshTerra"
 	}
 
+	meshsettings = {
+		name = "polySurface9Shape"
+		index = 0
+		texture_diffuse = "gaia_01_diffuse.dds"
+		texture_normal = "tropical_03_normal.dds"
+		texture_specular = "tropical_03_ringworld_spec.dds"
+		shader = "PdxMeshTerra"
+	}
+
 	game_data = {
 		size = @ringworld_segment_size
 	}
@@ -232,6 +295,15 @@ entity = {
 		shader = "PdxMeshTerra"
 	}
 
+	meshsettings = {
+		name = "polySurface9Shape"
+		index = 0
+		texture_diffuse = "gaia_01_diffuse.dds"
+		texture_normal = "tropical_03_normal.dds"
+		texture_specular = "tropical_03_ringworld_spec.dds"
+		shader = "PdxMeshTerra"
+	}
+
 	game_data = {
 		size = @ringworld_segment_size
 	}
@@ -260,6 +332,15 @@ entity = {
 		texture_diffuse = "ringworld_habitable_lithoid_01_diffuse.dds"
 		texture_normal = "ringworld_habitable_lithoid_01_normal.dds"
 		texture_specular = "ringworld_habitable_lithoid_01_specular.dds"
+		shader = "PdxMeshTerra"
+	}
+
+	meshsettings = {
+		name = "polySurface9Shape"
+		index = 0
+		texture_diffuse = "gaia_01_diffuse.dds"
+		texture_normal = "tropical_03_normal.dds"
+		texture_specular = "tropical_03_ringworld_spec.dds"
 		shader = "PdxMeshTerra"
 	}
 
@@ -295,6 +376,15 @@ entity = {
 		shader = "PdxMeshTerra"
 	}
 
+	meshsettings = {
+		name = "polySurface9Shape"
+		index = 0
+		texture_diffuse = "gaia_01_diffuse.dds"
+		texture_normal = "tropical_03_normal.dds"
+		texture_specular = "tropical_03_ringworld_spec.dds"
+		shader = "PdxMeshTerra"
+	}
+
 	game_data = {
 		size = @ringworld_segment_size
 		emissive_recolor_crunch = 2.0
@@ -324,6 +414,15 @@ entity = {
 		texture_diffuse = "ringworld_habitable_nemesis_01_diffuse.dds"
 		texture_normal = "ringworld_habitable_nemesis_01_normal.dds"
 		texture_specular = "ringworld_habitable_nemesis_01_specular.dds"
+		shader = "PdxMeshTerra"
+	}
+
+	meshsettings = {
+		name = "polySurface9Shape"
+		index = 0
+		texture_diffuse = "gaia_01_diffuse.dds"
+		texture_normal = "tropical_03_normal.dds"
+		texture_specular = "tropical_03_ringworld_spec.dds"
 		shader = "PdxMeshTerra"
 	}
 
