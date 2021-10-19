@@ -2,13 +2,15 @@
 
 Have you ever noticed that the ringworld from Origin: Shattered Ring is always the same colors (green and black) regardless of your ship appearance?  This mod changes that - now your starting ringworld will be the same as your empire's ship appearance (graphical culture).  However, ringworlds will always have a specific color based on the shipset rather than your empire's flag colors.
 
-Have you also noticed that repaired or constructed habitable ringworld segments don't have cloud cover, unlike the Origin: Shattered Ring starting segment?  It turns out that PDX made changes to how the cloud animation mesh is attached to habitable ringworld segments somewhere between version 1.6.3 "Adams" and version 1.9 "Boulle" and only updated the default habitable ringworld segment.  This mod fixes the entity definitions for every built-in shipset so that all habitable ringworld segments can enjoy cloud cover, regardless of which empire builds or restores them.
+Have you also noticed that repaired or constructed habitable ringworld sections don't have cloud cover, unlike the Origin: Shattered Ring starting section?  It turns out that PDX made changes to how the cloud animation mesh is attached to habitable ringworld sections somewhere between version 1.6.3 "Adams" and version 1.9 "Boulle" and only updated the default habitable ringworld section.  This mod fixes the entity definitions for every built-in shipset so that all habitable ringworld sections can enjoy cloud cover, regardless of which empire builds or restores them.
+
+Or maybe you noticed that the planetview for ringworlds shows that they have a Gaia climate, but that the texture in the systemview shows decidedly continental terrain.  Or that sometimes the terrain for habitable ringworld sections appears to be greyed-out and only show water sections?  This mod now also addresses this inconsistency by applying the Gaia planet textures to habitable ringworld sections and adjusting the specular map to avoid they transparency/grayness issue.
 
 [h1]Changes[/h1]
 
-This mod adds one extra event which is triggered after each empire's capital planet is initialized.  This event executes for every empire with Origin: Shattered Ring.  The event switches the appearance of the starting ringworld to match the shipset selected by the empire, but has no gameplay impact.  When the shattered ring segment is fully repaired (as of 3.1) the new segment resets its graphical entity upon completion which results in the ringworld returning to the default graphics.  To avoid this, the decision to restore a shattered ring segment now keeps its graphics entity when changing its planet class to a real ringworld segment.
+This mod adds one extra event which is triggered after each empire's capital planet is initialized.  This event executes for every empire with Origin: Shattered Ring.  The event switches the appearance of the starting ringworld to match the shipset selected by the empire, but has no gameplay impact.  When the shattered ring section is fully repaired (as of 3.1) the new section resets its graphical entity upon completion which results in the ringworld returning to the default graphics.  To avoid this, the decision to restore a shattered ring section now keeps its graphics entity when changing its planet class to a real ringworld section.
 
-Also altered are the built-in graphic entity definitions for habitable ringworld segments.  Every shipset (graphical culture) has its habitable ringworld segment definition updated to attach the cloud cover animation using a separate entity.  Thus all habitable ringworld segments properly display the cloud cover that was previously missing.
+Also altered are the built-in graphic entity definitions for habitable ringworld sections.  Every shipset (graphical culture) has its habitable ringworld section definition updated to attach the cloud cover animation using a separate entity.  Thus all habitable ringworld sections properly display the cloud cover that was previously missing.  And finally, the terrain textures for all habitable sections have been switched to use Gaia planet textures instead of Continental.
 
 [h2]Compatibility[/h2]
 
@@ -18,7 +20,7 @@ Should be compatible with almost anything else.  If other mods add new origins w
 
 [h3]When to Install[/h3]
 
-This mod can be safely added or removed from your save game after the game has started.  The Origin: Shattered Ring code in this mod executes entirely during game setup - if the game was started with the mod, its effects have already been applied otherwise nothing happens.  The fix applied to the shattered ring restoration decision only fires once the decision completes - if you remove this mod, any existing restored segments will retain their existing appearance, but newly repaired segments will be set to the default appearance.  The other graphical fixes only apply while the mod is enabled, otherwise the game will use its built-in definitions (which lack clouds).
+This mod can be safely added or removed from your save game after the game has started.  The Origin: Shattered Ring code in this mod executes entirely during game setup - if the game was started with the mod, its effects have already been applied otherwise nothing happens.  The fix applied to the shattered ring restoration decision only fires once the decision completes - if you remove this mod, any existing restored sections will retain their existing appearance, but newly repaired sections will be set to the default appearance.  The other graphical fixes only apply while the mod is enabled, otherwise the game will use its built-in definitions (which lack clouds and display continental terrain).
 
 [h3]Recommended Companion Mods[/h3]
 
@@ -28,15 +30,15 @@ This mod can be safely added or removed from your save game after the game has s
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2628980994]Machine Shipset Add-on: Shattered Ring Appearance[/url] ensures that the permanently-destroyed sections for Origin: Shattered Ring using the Machine Shipset properly display as that shipset.  This mod adds missing graphical definitions to the Machine Shipset.
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2628972292]Machine Shipset Add-on: Aesthetic Terraform Station Compatibility[/url] this compatibility patch ensures the correct Machine Shipset graphics are used for the above terraform stations.
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2628972292]Machine Shipset Add-on: Aesthetic Terraform Station Compatibility[/url] and this compatibility patch ensures the correct Machine Shipset graphics are used for the above terraform stations.  This mod adds missing graphical definitions to the Machine Shipset.
 
 [h2]Known Issues[/h2]
 
 [h3]Stellaris Bugs[/h3]
 
-After reloading a saved game, habitable ringworld segments that have a graphical culture no longer display the "planetary" texture - instead, only the bodies of water show and the ringworld's base texture is visible through the "holes."  Ringworld segments are set to match your empire's graphical culture either with this mod, or by the game itself when you restore or build a ringworld.  I have reported this bug on the official [url=https://forum.paradoxplaza.com/forum/threads/stellaris-v3-1-2-6df7-ring-worlds-do-not-have-planetary-terrain-after-the-game-is-loaded.1494567/]forums[/url].
+After reloading a saved game, habitable ringworld sections that have a graphical culture no longer display the "planetary" texture - instead, only the bodies of water show and the ringworld's base texture is visible through the "holes."  Ringworld sections are set to match your empire's graphical culture either with this mod, or by the game itself when you restore or build a ringworld.  I have reported this bug on the official [url=https://forum.paradoxplaza.com/forum/threads/stellaris-v3-1-2-6df7-ring-worlds-do-not-have-planetary-terrain-after-the-game-is-loaded.1494567/]forums[/url].  Since reporting the bug, I have been able to address it in this mod!
 
-Ringworld segments with a graphical culture do not have cloud cover in the base game.  This mod fixes that issue, but I still reported it as a bug on the official [url=https://forum.paradoxplaza.com/forum/threads/stellaris-v3-1-2-6df7-ring-worlds-do-not-have-clouds-whether-newly-constructed-or-restored-from-a-damaged-segment.1494566/]forums[/url].
+Ringworld sections with a graphical culture do not have cloud cover in the base game.  This mod fixes that issue, but I still reported it as a bug on the official [url=https://forum.paradoxplaza.com/forum/threads/stellaris-v3-1-2-6df7-ring-worlds-do-not-have-clouds-whether-newly-constructed-or-restored-from-a-damaged-segment.1494566/]forums[/url].
 
 [h3]Error Logs[/h3]
 
