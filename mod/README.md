@@ -2,7 +2,7 @@
 
 Have you ever noticed that the ringworld from Origin: Shattered Ring is always the same colors (black with green) regardless of your ship appearance?  This mod changes that - now your starting ringworld will be the same as your empire's ship appearance (graphical culture).  However, ringworlds will always have a specific color based on the shipset rather than your empire's flag colors.
 
-Have you also noticed that repaired or constructed habitable ringworld sections don't have cloud cover?  It turns out that PDX made changes to how the cloud animation mesh is attached to habitable ringworld sections somewhere between version 1.6.3 "Adams" and version 1.9 "Boulle" and only updated the default habitable ringworld section.  This mod fixes the entity definitions for every built-in shipset so that all habitable ringworld sections can enjoy cloud cover, regardless of which empire builds or restores them.
+Have you also noticed that repaired or constructed habitable ringworld sections don't have cloud cover?  It turns out that PDX made changes to how the cloud animation mesh is attached to habitable ringworld sections between version 1.6.3 "Adams" and version 1.9 "Boulle" and only updated the default habitable ringworld section.  This mod fixes the entity definitions for every built-in shipset so that all habitable ringworld sections can enjoy cloud cover, regardless of which empire builds or restores them.
 
 Or maybe you noticed that the planetview for ringworlds displays a Gaia climate, but that the texture in the systemview uses continental terrain.  Or that sometimes the terrain for habitable ringworld sections appears to be greyed-out and only show water sections?  This mod now also addresses this inconsistency by applying the Gaia planet textures to habitable ringworld sections and adjusting the specular map to avoid they transparency/grayness issue.
 
@@ -62,7 +62,7 @@ Overriding planetary decisions and graphical entity definitions produces entries
 ## Changelog
 
 * 1.0.0 Initial version
-* 1.1.0
+* 1.1.0 Move visual enhancements
     * Habitable ringworld sections now display Gaia planet textures (matches their use of the Gaia textures in the planetview; Gaia planets use tropical_03 for their normals and specular)
     * Use a customized specular map for ringworld planetary terrain - masking the red channel prevents the shader from "greying out" the landmasses, so now ringworlds will look nice whether they are new or you loaded up an old save
 
