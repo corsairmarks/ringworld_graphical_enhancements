@@ -14,7 +14,7 @@ Also altered are the built-in graphic entity definitions for habitable ringworld
 
 ## Compatibility
 
-Built for Stellaris version 3.1.\* "Lem."  Not compatible with achievements (because of the necessary event and the planetary decision override).  Do not use with [Shattered Ring Shipset Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=2566249278) because both mods fix graphical culture for Origin: Shattered Ring.
+Built for Stellaris version 3.2.\* "Herbert."  Not compatible with achievements (because of the necessary event and the planetary decision override).  Do not use with [Shattered Ring Shipset Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=2566249278) because both mods fix graphical culture for Origin: Shattered Ring.
 
 Should be compatible with almost anything else.  If other mods add new origins which also start on a ringworld, this mod will **not** affect them.  Mods that add new graphics entity definitions for ringworlds will **not** be affected by this mod - they may or may not have cloud cover based on how the author created their graphics entity definitions.
 
@@ -65,6 +65,9 @@ Overriding planetary decisions and graphical entity definitions produces entries
 * 1.1.0 Move visual enhancements
     * Habitable ringworld sections now display Gaia planet textures (matches their use of the Gaia textures in the planetview; Gaia planets use tropical_03 for their normals and specular)
     * Use a customized specular map for ringworld planetary terrain - masking the red channel prevents the shader from "greying out" the landmasses, so now ringworlds will look nice whether they are new or you loaded up an old save
+* 2.0.0 Update for compatibility with Stellaris 3.2 "Herbert" 
+    * Merge underlying game changes
+    * Support new shipset
 
 ## Source Code
 

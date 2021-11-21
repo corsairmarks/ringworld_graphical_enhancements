@@ -14,7 +14,7 @@ Also altered are the built-in graphic entity definitions for habitable ringworld
 
 [h2]Compatibility[/h2]
 
-Built for Stellaris version 3.1.* "Lem." Not compatible with achievements (because of the necessary event and the planetary decision override). Do not use with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2566249278]Shattered Ring Shipset Fix[/url] because both mods fix graphical culture for Origin: Shattered Ring.
+Built for Stellaris version 3.2.* "Herbert." Not compatible with achievements (because of the necessary event and the planetary decision override). Do not use with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2566249278]Shattered Ring Shipset Fix[/url] because both mods fix graphical culture for Origin: Shattered Ring.
 
 Should be compatible with almost anything else. If other mods add new origins which also start on a ringworld, this mod will [b]not[/b] affect them. Mods that add new graphics entity definitions for ringworlds will [b]not[/b] be affected by this mod - they may or may not have cloud cover based on how the author created their graphics entity definitions.
 
