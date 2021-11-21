@@ -87,6 +87,6 @@ decision_shattered_ring_project = {
 		}
 	}
 	ai_weight = {
-		weight = 5
+		weight = 100
 	}
 }
