@@ -14,7 +14,7 @@ Also altered are the built-in graphic entity definitions for habitable ringworld
 
 ## Compatibility
 
-Built for Stellaris version 3.2.\* "Herbert."  Not compatible with achievements (because of the necessary event and the planetary decision override).  Do not use with [Shattered Ring Shipset Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=2566249278) because both mods fix graphical culture for Origin: Shattered Ring.
+Built for Stellaris version 3.3 "Libra."  Not compatible with achievements (because of the necessary event and the planetary decision override).  Do not use with [Shattered Ring Shipset Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=2566249278) because both mods fix graphical culture for Origin: Shattered Ring.
 
 Should be compatible with almost anything else.  If other mods add new origins which also start on a ringworld, this mod will **not** affect them.  Mods that add new graphics entity definitions for ringworlds will **not** be affected by this mod - they may or may not have cloud cover based on how the author created their graphics entity definitions.
 
@@ -36,28 +36,28 @@ This mod can be safely added or removed from your save game after the game has s
 
 ### Stellaris Bugs
 
-After reloading a saved game, habitable ringworld sections that have a graphical culture no longer display the "planetary" texture - instead, only the bodies of water show and the ringworld's base texture is visible through the "holes."  Ringworld sections are set to match your empire's graphical culture either with this mod, or by the game itself when you restore or build a ringworld.  I have reported this bug on the official [forums](https://forum.paradoxplaza.com/forum/threads/stellaris-v3-1-2-6df7-ring-worlds-do-not-have-planetary-terrain-after-the-game-is-loaded.1494567/).  Since reporting the bug, I have been able to address it in this mod!
+After reloading a saved game, habitable ringworld sections that have a graphical culture no longer display the "planetary" texture - instead, only the bodies of water show and the ringworld's base texture is visible through the "holes."  Ringworld sections are set to match your empire's graphical culture either with this mod, or by the game itself when you restore or build a ringworld.  I have reported this bug on the official [forums](https://forum.paradoxplaza.com/forum/threads/1494567/).  Since reporting the bug, I have been able to address it in this mod!
 
-Ringworld sections with a graphical culture do not have cloud cover in the base game.  This mod fixes that issue, but I still reported it as a bug on the official [forums](https://forum.paradoxplaza.com/forum/threads/stellaris-v3-1-2-6df7-ring-worlds-do-not-have-clouds-whether-newly-constructed-or-restored-from-a-damaged-segment.1494566/).
+Ringworld sections with a graphical culture do not have cloud cover in the base game.  This mod fixes that issue, but I still reported it as a bug on the official [forums](https://forum.paradoxplaza.com/forum/threads/1494566/).
 
 ### Error Logs
 
 Overriding planetary decisions and graphical entity definitions produces entries in the error.log file, so expect to see thirteen lines similar to these:
 
 ```
-[23:32:04][pdx_entity.cpp:2583]: Duplicate of ringworld_habitable_entity_01_entity added to entity system
-[23:32:04][pdx_entity.cpp:2583]: Duplicate of arthropoid_01_ringworld_habitable_entity_01_entity added to entity system
-[23:32:04][pdx_entity.cpp:2583]: Duplicate of avian_01_ringworld_habitable_entity_01_entity added to entity system
-[23:32:04][pdx_entity.cpp:2583]: Duplicate of fungoid_01_ringworld_habitable_entity_01_entity added to entity system
-[23:32:04][pdx_entity.cpp:2583]: Duplicate of mammalian_01_ringworld_habitable_entity_01_entity added to entity system
-[23:32:04][pdx_entity.cpp:2583]: Duplicate of molluscoid_01_ringworld_habitable_entity_01_entity added to entity system
-[23:32:04][pdx_entity.cpp:2583]: Duplicate of plantoid_01_ringworld_habitable_entity_01_entity added to entity system
-[23:32:04][pdx_entity.cpp:2583]: Duplicate of reptilian_01_ringworld_habitable_entity_01_entity added to entity system
-[23:32:04][pdx_entity.cpp:2583]: Duplicate of lithoid_01_ringworld_habitable_entity_01_entity added to entity system
-[23:32:04][pdx_entity.cpp:2583]: Duplicate of necroid_01_ringworld_habitable_entity_01_entity added to entity system
-[23:32:04][pdx_entity.cpp:2583]: Duplicate of nemesis_01_ringworld_habitable_entity_01_entity added to entity system
-[23:32:04][pdx_entity.cpp:2583]: Duplicate of aquatic_01_ringworld_habitable_entity_01_entity added to entity system
-[23:32:11][game_singleobjectdatabase.h:147]: Object with key: decision_shattered_ring_project already exists
+[22:28:10][pdx_entity.cpp:2583]: Duplicate of ringworld_habitable_entity_01_entity added to entity system
+[22:28:10][pdx_entity.cpp:2583]: Duplicate of arthropoid_01_ringworld_habitable_entity_01_entity added to entity system
+[22:28:10][pdx_entity.cpp:2583]: Duplicate of avian_01_ringworld_habitable_entity_01_entity added to entity system
+[22:28:10][pdx_entity.cpp:2583]: Duplicate of fungoid_01_ringworld_habitable_entity_01_entity added to entity system
+[22:28:10][pdx_entity.cpp:2583]: Duplicate of mammalian_01_ringworld_habitable_entity_01_entity added to entity system
+[22:28:10][pdx_entity.cpp:2583]: Duplicate of molluscoid_01_ringworld_habitable_entity_01_entity added to entity system
+[22:28:10][pdx_entity.cpp:2583]: Duplicate of plantoid_01_ringworld_habitable_entity_01_entity added to entity system
+[22:28:10][pdx_entity.cpp:2583]: Duplicate of reptilian_01_ringworld_habitable_entity_01_entity added to entity system
+[22:28:10][pdx_entity.cpp:2583]: Duplicate of lithoid_01_ringworld_habitable_entity_01_entity added to entity system
+[22:28:10][pdx_entity.cpp:2583]: Duplicate of necroid_01_ringworld_habitable_entity_01_entity added to entity system
+[22:28:10][pdx_entity.cpp:2583]: Duplicate of nemesis_01_ringworld_habitable_entity_01_entity added to entity system
+[22:28:10][pdx_entity.cpp:2583]: Duplicate of aquatic_01_ringworld_habitable_entity_01_entity added to entity system
+[22:28:14][game_singleobjectdatabase.h:147]: Object with key: decision_shattered_ring_project already exists, using the one at  file: common/decisions/ringworld_graphical_enhancements_decision_overrides.txt line: 2
 ```
 
 ## Changelog
@@ -69,6 +69,7 @@ Overriding planetary decisions and graphical entity definitions produces entries
 * 2.0.0 Update for compatibility with Stellaris 3.2 "Herbert" 
     * Merge underlying game changes
     * Support new shipset
+* 2.1.0 Mark as compatible with Stellaris 3.3 "Libra" - no script changes
 
 ## Source Code
 
