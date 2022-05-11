@@ -11,7 +11,7 @@ This mod adds one extra event which is triggered after each empire's capital pla
 Also altered are the built-in graphic entity definitions for habitable ringworld sections. Every shipset (graphical culture) has its habitable ringworld section definition updated to attach the cloud cover animation using a separate entity. Thus all habitable ringworld sections properly display the cloud cover that was previously missing. And finally, the terrain textures for all habitable sections have been switched to use Gaia planet textures instead of Continental.
 
 [h2]Compatibility[/h2]
-Built for Stellaris version 3.3 "Libra." Not compatible with achievements (because of the necessary event and the planetary decision override). Do not use with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2566249278]Shattered Ring Shipset Fix[/url] because both mods fix graphical culture for Origin: Shattered Ring.
+Built for Stellaris version 3.4 "Cepheus." Not compatible with achievements (because of the necessary event and the planetary decision override).
 
 Should be compatible with almost anything else. If other mods add new origins which also start on a ringworld, this mod will [b]not[/b] affect them. Mods that add new graphics entity definitions for ringworlds will [b]not[/b] be affected by this mod - they may or may not have cloud cover based on how the author created their graphics entity definitions.
 
@@ -48,7 +48,7 @@ Overriding planetary decisions and graphical entity definitions produces entries
 [22:28:10][pdx_entity.cpp:2583]: Duplicate of necroid_01_ringworld_habitable_entity_01_entity added to entity system
 [22:28:10][pdx_entity.cpp:2583]: Duplicate of nemesis_01_ringworld_habitable_entity_01_entity added to entity system
 [22:28:10][pdx_entity.cpp:2583]: Duplicate of aquatic_01_ringworld_habitable_entity_01_entity added to entity system
-[22:28:14][game_singleobjectdatabase.h:147]: Object with key: decision_shattered_ring_project already exists, using the one at file: common/decisions/ringworld_graphical_enhancements_decision_overrides.txt line: 2
+[22:28:14][game_singleobjectdatabase.h:148]: Object with key: decision_shattered_ring_project already exists, using the one at file: common/decisions/ringworld_graphical_enhancements_decision_overrides.txt line: 2
 [/code]
 [h2]Changelog[/h2]
 See [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2628518102]Change Notes[/url]

@@ -14,7 +14,7 @@ Also altered are the built-in graphic entity definitions for habitable ringworld
 
 ## Compatibility
 
-Built for Stellaris version 3.3 "Libra."  Not compatible with achievements (because of the necessary event and the planetary decision override).  Do not use with [Shattered Ring Shipset Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=2566249278) because both mods fix graphical culture for Origin: Shattered Ring.
+Built for Stellaris version 3.4 "Cepheus."  Not compatible with achievements (because of the necessary event and the planetary decision override).
 
 Should be compatible with almost anything else.  If other mods add new origins which also start on a ringworld, this mod will **not** affect them.  Mods that add new graphics entity definitions for ringworlds will **not** be affected by this mod - they may or may not have cloud cover based on how the author created their graphics entity definitions.
 
@@ -57,7 +57,7 @@ Overriding planetary decisions and graphical entity definitions produces entries
 [22:28:10][pdx_entity.cpp:2583]: Duplicate of necroid_01_ringworld_habitable_entity_01_entity added to entity system
 [22:28:10][pdx_entity.cpp:2583]: Duplicate of nemesis_01_ringworld_habitable_entity_01_entity added to entity system
 [22:28:10][pdx_entity.cpp:2583]: Duplicate of aquatic_01_ringworld_habitable_entity_01_entity added to entity system
-[22:28:14][game_singleobjectdatabase.h:147]: Object with key: decision_shattered_ring_project already exists, using the one at  file: common/decisions/ringworld_graphical_enhancements_decision_overrides.txt line: 2
+[22:28:14][game_singleobjectdatabase.h:148]: Object with key: decision_shattered_ring_project already exists, using the one at  file: common/decisions/ringworld_graphical_enhancements_decision_overrides.txt line: 2
 ```
 
 ## Changelog
@@ -70,6 +70,7 @@ Overriding planetary decisions and graphical entity definitions produces entries
     * Merge underlying game changes
     * Support new shipset
 * 2.1.0 Mark as compatible with Stellaris 3.3 "Libra" - no script changes
+* 2.2.0 Mark as compatible with Stellaris 3.4 "Cepheus" - no script changes
 
 ## Source Code
 
