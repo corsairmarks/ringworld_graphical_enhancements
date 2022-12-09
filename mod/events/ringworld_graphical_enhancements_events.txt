@@ -1,16 +1,17 @@
 namespace = ringworld_graphical_enhancements
 
-# triggered by empire_init_capital_planet
-planet_event = {
+# triggered by on_game_start_country
+country_event = {
 	id = ringworld_graphical_enhancements.1
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
-		owner = { has_origin = origin_shattered_ring }
+		exists = capital_scope
+		has_origin = origin_shattered_ring
 	}
 	immediate = {
-		owner = { save_event_target_as = initializing_country }
-		solar_system = {
+		save_event_target_as = initializing_country
+		capital_scope.solar_system = {
 			reset_ringworld_section_graphical_culture = { SECTION_TYPE = habitable }
 			reset_ringworld_section_graphical_culture = { SECTION_TYPE = habitable_damaged }
 			reset_ringworld_section_graphical_culture = { SECTION_TYPE = tech }

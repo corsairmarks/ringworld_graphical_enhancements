@@ -73,6 +73,7 @@ Overriding planetary decisions and graphical entity definitions produces entries
 * 2.1.0 Mark as compatible with Stellaris 3.3 "Libra" - no script changes
 * 2.2.0 Mark as compatible with Stellaris 3.4 "Cepheus" - no script changes
 * 3.0.0 Mark as compatible with Stellaris version 3.6 "Orion"
+    * Change the Shattered Ring appearance event to fire after `game_start.1` which is what sets up the colonizable ringworld segments
     * Update the "Repair the Shattered Ring" decision with underlying changes (it's still not perfect, so this mod's override persists)
     * Support new shipset (Toxoid)
 

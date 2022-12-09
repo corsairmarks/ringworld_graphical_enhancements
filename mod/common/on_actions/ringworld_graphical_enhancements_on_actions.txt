@@ -1,7 +1,6 @@
-# fired during empire initialization when starting a new game
-# this = planet
-# from = species, founder
-empire_init_capital_planet = {
+# fired when the game starts for each country
+# this = country
+on_game_start_country = {
 	events = {
 		ringworld_graphical_enhancements.1
 	}
