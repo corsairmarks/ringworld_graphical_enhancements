@@ -14,7 +14,7 @@ Also altered are the built-in graphic entity definitions for habitable ringworld
 
 ## Compatibility
 
-Built for Stellaris version 3.4 "Cepheus."  Not compatible with achievements (because of the necessary event and the planetary decision override).
+Built for Stellaris version 3.6 "Orion."  Not compatible with achievements (because of the necessary event and the planetary decision override).
 
 Should be compatible with almost anything else.  If other mods add new origins which also start on a ringworld, this mod will **not** affect them.  Mods that add new graphics entity definitions for ringworlds will **not** be affected by this mod - they may or may not have cloud cover based on how the author created their graphics entity definitions.
 
@@ -64,13 +64,16 @@ Overriding planetary decisions and graphical entity definitions produces entries
 
 * 1.0.0 Initial version
 * 1.1.0 Move visual enhancements
-    * Habitable ringworld sections now display Gaia planet textures (matches their use of the Gaia textures in the planetview; Gaia planets use tropical_03 for their normals and specular)
+    * Habitable ringworld sections now display Gaia planet textures (matches their use of the Gaia textures in the planetview; Gaia planets use `tropical_03` for their normals and specular)
     * Use a customized specular map for ringworld planetary terrain - masking the red channel prevents the shader from "greying out" the landmasses, so now ringworlds will look nice whether they are new or you loaded up an old save
 * 2.0.0 Update for compatibility with Stellaris 3.2 "Herbert" 
     * Merge underlying game changes
-    * Support new shipset
+    * Support new shipset (Aquatic)
 * 2.1.0 Mark as compatible with Stellaris 3.3 "Libra" - no script changes
 * 2.2.0 Mark as compatible with Stellaris 3.4 "Cepheus" - no script changes
+* 3.0.0 Mark as compatible with Stellaris version 3.6 "Orion"
+    * Update the "Repair the Shattered Ring" decision with underlying changes (it's still not perfect, so this mod's override persists)
+    * Support new shipset (Toxoid)
 
 ## Source Code
 
