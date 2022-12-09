@@ -2,11 +2,11 @@
 decision_shattered_ring_project = {
 	owned_planets_only = yes
 	icon = decision_arcology_project
-	enactment_time = 3600
+	enactment_time = 2700
 	resources = {
 		category = decisions
 		cost = {
-			alloys = 10000
+			alloys = 7500
 		}
 	}
 	potential = {
@@ -84,6 +84,8 @@ decision_shattered_ring_project = {
 
 			# Finally, bring it in line with ringworld sizes
 			set_planet_size = 10
+			# And set the country flag so you can take Galactic Wonders
+			owner = { set_country_flag = has_built_or_repaired_megastructure }
 		}
 	}
 	ai_weight = {
