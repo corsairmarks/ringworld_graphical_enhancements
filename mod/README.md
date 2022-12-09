@@ -8,7 +8,7 @@ Or maybe you noticed that the planetview for ringworlds displays a Gaia climate,
 
 # Changes
 
-This mod adds one extra event which is triggered after each empire's capital planet is initialized.  This event executes for every empire with Origin: Shattered Ring.  The event switches the appearance of the starting ringworld to match the shipset selected by the empire, but has no gameplay impact.  When the shattered ring section is fully repaired (as of 3.1) the new section resets its graphical entity upon completion which results in the ringworld returning to the default graphics.  To avoid this, the decision to restore a shattered ring section now keeps its graphics entity when changing its planet class to a real ringworld section.
+This mod adds one extra event which is triggered for each empire with Origin: Shattered Ring at game start. The event switches the appearance of the starting ringworld to match the shipset selected by the empire, but has no gameplay impact. When shattered ring sections are fully repaired (as of 3.1) the repaired section resets its graphical entity upon completion which results in the ringworld returning to the default graphics. To avoid this, the decision to restore a shattered ring section now keeps its graphics entity when changing its planet class to a real ringworld section.
 
 Also altered are the built-in graphic entity definitions for habitable ringworld sections.  Every shipset (graphical culture) has its habitable ringworld section definition updated to attach the cloud cover animation using a separate entity.  Thus all habitable ringworld sections properly display the cloud cover that was previously missing.  And finally, the terrain textures for all habitable sections have been switched to use Gaia planet textures instead of Continental.
 
@@ -20,7 +20,9 @@ Should be compatible with almost anything else.  If other mods add new origins w
 
 ### When to Install
 
-This mod can be safely added or removed from your save game after the game has started.  The Origin: Shattered Ring code in this mod executes entirely during game setup - if the game was started with the mod, its effects have already been applied otherwise nothing happens.  The fix applied to the shattered ring restoration decision only fires once the decision completes - if you remove this mod, any existing restored sections will retain their existing appearance, but newly repaired sections will be set to the default appearance.  The other graphical fixes only apply while the mod is enabled, otherwise the game will use its built-in definitions (which lack clouds and display continental terrain).
+This mod can be safely added or removed from your save game after the game has started.  The Origin: Shattered Ring code in this mod executes entirely during game setup - if the game was started with the mod, its effects have already been applied otherwise nothing happens.
+
+The fix applied to the shattered ring restoration decision only fires once the decision completes - if you remove this mod, any existing restored sections will retain their existing appearance, but newly repaired sections will be set to the default appearance.  The other graphical fixes only apply while the mod is enabled, otherwise the game will use its built-in definitions (which lack clouds and display continental terrain).
 
 ### Recommended Companion Mods
 
@@ -35,6 +37,9 @@ This mod can be safely added or removed from your save game after the game has s
 ## Known Issues
 
 ### Stellaris Bugs
+
+#### TODO: verify whether these are bugs still
+#### Update readem
 
 After reloading a saved game, habitable ringworld sections that have a graphical culture no longer display the "planetary" texture - instead, only the bodies of water show and the ringworld's base texture is visible through the "holes."  Ringworld sections are set to match your empire's graphical culture either with this mod, or by the game itself when you restore or build a ringworld.  I have reported this bug on the official [forums](https://forum.paradoxplaza.com/forum/threads/1494567/).  Since reporting the bug, I have been able to address it in this mod!
 
