@@ -42,22 +42,23 @@ Ringworld sections with a graphical culture do not have cloud cover in the base 
 
 ### Error Logs
 
-Overriding planetary decisions and graphical entity definitions produces entries in the error.log file, so expect to see thirteen lines similar to these:
+Overriding planetary decisions and graphical entity definitions produces entries in the error.log file, so expect to see fourteen lines similar to these:
 
 ```
-[22:28:10][pdx_entity.cpp:2583]: Duplicate of ringworld_habitable_entity_01_entity added to entity system
-[22:28:10][pdx_entity.cpp:2583]: Duplicate of arthropoid_01_ringworld_habitable_entity_01_entity added to entity system
-[22:28:10][pdx_entity.cpp:2583]: Duplicate of avian_01_ringworld_habitable_entity_01_entity added to entity system
-[22:28:10][pdx_entity.cpp:2583]: Duplicate of fungoid_01_ringworld_habitable_entity_01_entity added to entity system
-[22:28:10][pdx_entity.cpp:2583]: Duplicate of mammalian_01_ringworld_habitable_entity_01_entity added to entity system
-[22:28:10][pdx_entity.cpp:2583]: Duplicate of molluscoid_01_ringworld_habitable_entity_01_entity added to entity system
-[22:28:10][pdx_entity.cpp:2583]: Duplicate of plantoid_01_ringworld_habitable_entity_01_entity added to entity system
-[22:28:10][pdx_entity.cpp:2583]: Duplicate of reptilian_01_ringworld_habitable_entity_01_entity added to entity system
-[22:28:10][pdx_entity.cpp:2583]: Duplicate of lithoid_01_ringworld_habitable_entity_01_entity added to entity system
-[22:28:10][pdx_entity.cpp:2583]: Duplicate of necroid_01_ringworld_habitable_entity_01_entity added to entity system
-[22:28:10][pdx_entity.cpp:2583]: Duplicate of nemesis_01_ringworld_habitable_entity_01_entity added to entity system
-[22:28:10][pdx_entity.cpp:2583]: Duplicate of aquatic_01_ringworld_habitable_entity_01_entity added to entity system
-[22:28:14][game_singleobjectdatabase.h:148]: Object with key: decision_shattered_ring_project already exists, using the one at  file: common/decisions/ringworld_graphical_enhancements_decision_overrides.txt line: 2
+[03:22:31][graphics/pdx_entity.cpp:2546]: Duplicate of ringworld_habitable_entity_01_entity added to entity system
+[03:22:31][graphics/pdx_entity.cpp:2546]: Duplicate of arthropoid_01_ringworld_habitable_entity_01_entity added to entity system
+[03:22:31][graphics/pdx_entity.cpp:2546]: Duplicate of avian_01_ringworld_habitable_entity_01_entity added to entity system
+[03:22:31][graphics/pdx_entity.cpp:2546]: Duplicate of fungoid_01_ringworld_habitable_entity_01_entity added to entity system
+[03:22:31][graphics/pdx_entity.cpp:2546]: Duplicate of mammalian_01_ringworld_habitable_entity_01_entity added to entity system
+[03:22:31][graphics/pdx_entity.cpp:2546]: Duplicate of molluscoid_01_ringworld_habitable_entity_01_entity added to entity system
+[03:22:31][graphics/pdx_entity.cpp:2546]: Duplicate of plantoid_01_ringworld_habitable_entity_01_entity added to entity system
+[03:22:31][graphics/pdx_entity.cpp:2546]: Duplicate of reptilian_01_ringworld_habitable_entity_01_entity added to entity system
+[03:22:31][graphics/pdx_entity.cpp:2546]: Duplicate of lithoid_01_ringworld_habitable_entity_01_entity added to entity system
+[03:22:31][graphics/pdx_entity.cpp:2546]: Duplicate of necroid_01_ringworld_habitable_entity_01_entity added to entity system
+[03:22:31][graphics/pdx_entity.cpp:2546]: Duplicate of nemesis_01_ringworld_habitable_entity_01_entity added to entity system
+[03:22:31][graphics/pdx_entity.cpp:2546]: Duplicate of aquatic_01_ringworld_habitable_entity_01_entity added to entity system
+[03:22:31][graphics/pdx_entity.cpp:2546]: Duplicate of toxoid_01_ringworld_habitable_entity_01_entity added to entity system
+[03:22:36][game_singleobjectdatabase.h:165]: Object with key: decision_shattered_ring_project already exists, using the one at  file: common/decisions/ringworld_graphical_enhancements_decision_overrides.txt line: 2
 ```
 
 ## Changelog
