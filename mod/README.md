@@ -38,9 +38,6 @@ The fix applied to the shattered ring restoration decision only fires once the d
 
 ### Stellaris Bugs
 
-#### TODO: verify whether these are bugs still
-#### Update readem
-
 After reloading a saved game, habitable ringworld sections that have a graphical culture no longer display the "planetary" texture - instead, only the bodies of water show and the ringworld's base texture is visible through the "holes."  Ringworld sections are set to match your empire's graphical culture either with this mod, or by the game itself when you restore or build a ringworld.  I have reported this bug on the official [forums](https://forum.paradoxplaza.com/forum/threads/1494567/).  Since reporting the bug, I have been able to address it in this mod!
 
 Ringworld sections with a graphical culture do not have cloud cover in the base game.  This mod fixes that issue, but I still reported it as a bug on the official [forums](https://forum.paradoxplaza.com/forum/threads/1494566/).
