@@ -78,6 +78,7 @@ Overriding planetary decisions and graphical entity definitions produces entries
     * Change the Shattered Ring appearance event to fire after `game_start.1` which is what sets up the colonizable ringworld segments
     * Update the "Repair the Shattered Ring" decision with underlying changes (it's still not perfect, so this mod's override persists)
     * Support new shipset (Toxoid)
+* 3.1.0 Add a compatibility trigger for other mods to check whether this one is active
 
 ## Source Code
 
