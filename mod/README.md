@@ -60,7 +60,10 @@ Overriding planetary decisions and graphical entity definitions produces entries
 [03:22:31][graphics/pdx_entity.cpp:2546]: Duplicate of nemesis_01_ringworld_habitable_entity_01_entity added to entity system
 [03:22:31][graphics/pdx_entity.cpp:2546]: Duplicate of aquatic_01_ringworld_habitable_entity_01_entity added to entity system
 [03:22:31][graphics/pdx_entity.cpp:2546]: Duplicate of toxoid_01_ringworld_habitable_entity_01_entity added to entity system
+[03:22:33][game_singleobjectdatabase.h:165]: Object with key: spawn_shattered_ring_guaranteed_1_effect already exists, using the one at  file: common/scripted_effects/zz_ringworld_graphical_enhancements_federations_event_effect_overrides.txt line: 4
+[03:22:33][game_singleobjectdatabase.h:165]: Object with key: spawn_shattered_ring_guaranteed_2_effect already exists, using the one at  file: common/scripted_effects/zz_ringworld_graphical_enhancements_federations_event_effect_overrides.txt line: 39
 [03:22:36][game_singleobjectdatabase.h:165]: Object with key: decision_shattered_ring_project already exists, using the one at  file: common/decisions/ringworld_graphical_enhancements_decision_overrides.txt line: 2
+[03:22:37][prescripted_systems.cpp:847]: An initializer called "shattered_ring_start" already exists.  file: common/solar_system_initializers/federations_initializers.txt line: 1797
 ```
 
 ## Changelog
@@ -79,6 +82,7 @@ Overriding planetary decisions and graphical entity definitions produces entries
     * Update the "Repair the Shattered Ring" decision with underlying changes (it's still not perfect, so this mod's override persists)
     * Support new shipset (Toxoid)
 * 3.1.0 Add a compatibility trigger for other mods to check whether this one is active
+* 3.2.0 Ensure the ringworld for Origin: Shattered Ring spawns symmetrically
 
 ## Source Code
 
