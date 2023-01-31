@@ -25,7 +25,7 @@ The fix applied to the shattered ring restoration decision only fires once the d
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2077186491]Machine Shipset[/url] is a phenomenal, fully-sectioned shipset and includes megastructures. Combined with this mod you can have Origin: Shattered Ring with the Machine Shipset ringworld appearance.
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2628980994]Machine Shipset Add-on: Shattered Ring Appearance[/url] ensures that the permanently-destroyed sections for Origin: Shattered Ring using the Machine Shipset properly display as that shipset. This mod adds missing graphical definitions to the Machine Shipset.
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2628980994]Machine Shipset Add-on: Shattered Ring and Habitat Appearance[/url] ensures that the permanently-destroyed sections for Origin: Shattered Ring using the Machine Shipset properly display as that shipset. This mod adds missing graphical definitions to the Machine Shipset.
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2628972292]Machine Shipset Add-on: Aesthetic Terraform Station Compatibility[/url] and this compatibility patch ensures the correct Machine Shipset graphics are used for the above terraform stations. This mod adds missing graphical definitions to the Machine Shipset.
 
