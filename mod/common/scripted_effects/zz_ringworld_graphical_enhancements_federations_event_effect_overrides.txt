@@ -1,0 +1,72 @@
+# Modified:
+# * add flags indicating these sections are part of the 1st guaranteed world
+# * set the appropriate star flag as in the megastructures ring_world_3_intermediate/ring_world_restored
+spawn_shattered_ring_guaranteed_1_effect = {
+	spawn_planet = {
+		class = "pc_ringworld_tech"
+		name = "NAME_Ring_Section"
+		orbit_angle = -30
+		orbit_distance = 45
+		flags = { tech_1 }
+	}
+	spawn_planet = {
+		class = "pc_ringworld_seam"
+		name = "NAME_Ring_Section"
+		orbit_angle = 0
+		orbit_distance = 45
+		flags = { seam_1 }
+	}
+	spawn_planet = {
+		class = "pc_shattered_ring_habitable"
+		name = "NAME_Habitable_Section_B"
+		orbit_angle = 30
+		orbit_distance = 45
+		deposit_blockers = none
+		modifiers = none
+		flags = { ignore_startup_effect megastructure guaranteed_1 }
+		init_effect = {
+			prevent_anomaly = yes
+			shattered_ring_blocker_effect = yes
+			solar_system = { set_star_flag = ring_section_2 }
+		}
+	}
+}
+
+# Modified:
+# * spawn in the correct order - tech, seam, habitable
+# * add flags indicating these sections are part of the 2nd guaranteed world
+# * clean up star flags as in the megastructures ring_world_3_intermediate/ring_world_restored
+spawn_shattered_ring_guaranteed_2_effect = {
+	spawn_planet = {
+		class = "pc_ringworld_tech"
+		name = "NAME_Ring_Section"
+		orbit_angle = 180
+		orbit_distance = 45
+		flags = { tech_2 }
+	}
+	spawn_planet = {
+		class = "pc_ringworld_seam"
+		name = "NAME_Ring_Section"
+		orbit_angle = 150
+		orbit_distance = 45
+		flags = { seam_2 }
+	}
+	spawn_planet = {
+		class = "pc_shattered_ring_habitable"
+		name = "NAME_Habitable_Section_D"
+		orbit_angle = 210
+		orbit_distance = 45
+		deposit_blockers = none
+		modifiers = none
+		flags = { ignore_startup_effect megastructure guaranteed_2 }
+		init_effect = {
+			prevent_anomaly = yes
+			shattered_ring_blocker_effect = yes
+			solar_system = {
+				remove_star_flag = ring_section_1
+				remove_star_flag = ring_section_2
+				remove_star_flag = ring_section_3
+			}
+		}
+	}
+}

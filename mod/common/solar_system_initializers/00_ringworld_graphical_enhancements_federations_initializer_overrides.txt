@@ -1,0 +1,140 @@
+# this value matches the one defined in common/solar_system_initializers/federations_initializers.txt
+@jumps = 3
+
+# Shattered Ring Origin
+# Modified:
+# * second damaged seam replaced with a permanently ruined habitable section (for symmetry)
+# * added ring_section_1 and ring_section_3 flags to the systemn star so that restored segments (with 0 or 1 habitable planets setting) are named appropriately
+shattered_ring_start = {
+	flags = { empire_home_system ring_world_built ring_section_1 ring_section_3 }
+	usage = origin
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+		spawn_megastructure = {
+			type = "ring_world_ruined"
+			orbit_angle = 0
+			orbit_distance = 45
+			init_effect = {
+				set_megastructure_flag = guaranteed_1
+			}
+		}
+		spawn_megastructure = {
+			type = "ring_world_ruined"
+			orbit_angle = 180
+			orbit_distance = 45
+			init_effect = {
+				set_megastructure_flag = guaranteed_2
+			}
+		}
+	}
+
+	class = "sc_g"
+	planet = {
+		class = star
+		orbit_distance = 0
+		orbit_angle = 0
+	}
+
+	change_orbit = 45
+
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "NAME_Ring_Section"
+		orbit_angle = 240
+		orbit_distance = 0
+		flags = { tech_1 }
+	}
+
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "NAME_Ring_Section"
+		orbit_angle = 30
+		orbit_distance = 0
+		flags = { seam_1 }
+	}
+
+	planet = {
+		class = "pc_shattered_ring_habitable"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+		starting_planet = yes
+		flags = { ignore_startup_effect megastructure }
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+	planet = {
+		class = "pc_ringworld_tech_damaged"
+		name = "NAME_Ring_Section"
+		orbit_angle = 120
+		orbit_distance = 0
+		flags = { tech_damaged_1 }
+	}
+
+	planet = {
+		class = "pc_ringworld_seam_damaged"
+		name = "NAME_Irreparable_Damage"
+		orbit_angle = 30
+		orbit_distance = 0
+		flags = { ignore_startup_effect starting_mining_target starting_deposit seam_damaged_1 }
+		init_effect = {
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				entity_offset_height = -15
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 0
+					angle = 0
+				}
+			}
+			set_deposit = d_engineering_5
+			set_planet_flag = starting_research_target
+			set_planet_flag = starting_deposit
+		}
+	}
+
+	planet = {
+		class = "pc_shattered_2"
+		name = "NAME_The_Interloper"
+		orbit_distance = -5
+		orbit_angle = 0
+		size = 5
+		has_ring = no
+		flags = { ignore_startup_effect starting_mining_target starting_deposit }
+		init_effect = {
+			set_deposit = d_minerals_10
+		}
+	}
+
+	planet = {
+		class = "pc_ringworld_habitable_damaged"
+		name = "NAME_Habitable_Section_A"
+		orbit_angle = 30
+		orbit_distance = 5
+		flags = { hab_damaged_1 }
+	}
+
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_first_colony"
+	}
+}
