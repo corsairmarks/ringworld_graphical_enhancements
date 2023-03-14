@@ -6,7 +6,7 @@
 # * second damaged seam replaced with a permanently ruined habitable section (for symmetry)
 # * added ring_section_1 and ring_section_3 flags to the systemn star so that restored segments (with 0 or 1 habitable planets setting) are named appropriately
 shattered_ring_start = {
-	flags = { empire_home_system ring_world_built ring_section_1 ring_section_3 }
+	flags = { empire_home_system ring_world_built shattered_ring_system ring_section_1 ring_section_3 }
 	usage = origin
 
 	init_effect = {
