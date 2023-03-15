@@ -58,6 +58,6 @@ Overriding planetary decisions and graphical entity definitions produces entries
 See [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2628518102]Change Notes[/url]
 
 [h2]Source Code[/h2]
-Hosted on [url=https://github.com/corsairmarks/ringworld_origin_rebalance]GitHub[/url]
+Hosted on [url=https://github.com/corsairmarks/ringworld_graphical_enhancements]GitHub[/url]
 
 [url=https://discord.gg/2qjkAF8DY7][img]https://i.imgur.com/4Und3QN.png[/img][/url]
