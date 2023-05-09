@@ -14,7 +14,7 @@ Also altered are the built-in graphic entity definitions for habitable ringworld
 
 ## Compatibility
 
-Built for Stellaris version 3.7 "Canis Minor."  Not compatible with achievements (because of the necessary event and the planetary decision override).
+Built for Stellaris version 3.8 "Gemini."  Not compatible with achievements (because of the necessary event and the planetary decision override).
 
 Should be compatible with almost anything else.  If other mods add new origins which also start on a ringworld, this mod will **not** affect them.  Mods that add new graphics entity definitions for ringworlds will **not** be affected by this mod - they may or may not have cloud cover based on how the author created their graphics entity definitions.
 
@@ -81,6 +81,10 @@ Overriding planetary decisions and graphical entity definitions produces entries
 * 3.1.0 Add a compatibility trigger for other mods to check whether this one is active
 * 3.2.0 Ensure the ringworld for Origin: Shattered Ring spawns symmetrically
 * 3.3.0 Mark as compatible with Stellaris 3.7 "Canis Minor" - no script changes
+* 4.0.0 Update for compatibility with Stellaris version 3.8 "Gemini"
+    * Integrate underlying game changes
+    * Add override of `ringworld_habitable_entity_01_clouds_entity` in order to bring back animated clouds
+    * Add a full-file override of the PDX shaders in order to add a shader that properly draws, blends, and animates cloud cover for ringworlds
 
 ## Source Code
 
