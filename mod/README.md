@@ -83,7 +83,7 @@ Overriding planetary decisions and graphical entity definitions produces entries
 * 3.3.0 Mark as compatible with Stellaris 3.7 "Canis Minor" - no script changes
 * 4.0.0 Update for compatibility with Stellaris version 3.8 "Gemini"
     * Integrate underlying game changes
-    * Add override of `ringworld_habitable_entity_01_clouds_entity` in order to bring back animated clouds
+    * Add override of `ringworld_habitable_entity_01_clouds_entity` in order to bring back animated clouds on habitable ringworld segments
     * Add a full-file override of the PDX shaders in order to add a shader that properly draws, blends, and animates cloud cover for ringworlds
 
 ## Source Code
